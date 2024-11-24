@@ -7,7 +7,7 @@ const translations = {
     "hero-title": "Profesionalne elektro-instalacijske usluge",
     "hero-description": "Donosimo izvrsnost u električnim rješenjima",
     "cta-button": "Zatražite ponudu",
-    "about-title": "O Vanguard Sustavima",
+    "about-title": "O Vanguard Systems-u",
     "services-title": "Naše usluge",
     "service-commercial-title": "Komercijalni projekti",
     "service-commercial-description":
