@@ -100,10 +100,6 @@ function setLanguage(language) {
 const userLang = navigator.language.slice(0, 2);
 setLanguage(translations[userLang] ? userLang : "en");
 
-languageDropdown.addEventListener("change", (e) => {
-  setLanguage(e.target.value);
-});
-
 document.addEventListener("DOMContentLoaded", () => {
   const observerOptions = {
     threshold: 0.2, // Trigger animation when 20% of the element is visible
@@ -121,4 +117,14 @@ document.addEventListener("DOMContentLoaded", () => {
   }, observerOptions);
 
   fadeElements.forEach((el) => observer.observe(el));
+
+  // Detect the default language and update the dropdown value
+  const userLang = navigator.language.slice(0, 2);
+  const defaultLang = translations[userLang] ? userLang : "en";
+  setLanguage(defaultLang);
+  languageDropdown.value = defaultLang; // Ensure the dropdown reflects the detected language
+});
+
+languageDropdown.addEventListener("change", (e) => {
+  setLanguage(e.target.value);
 });
