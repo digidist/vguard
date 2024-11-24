@@ -1,0 +1,80 @@
+# macOS-specific files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows-specific files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Node.js modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.swx
+*.bak
+*.tmp
+*.log
+
+# Compiled files and build artifacts
+*.o
+*.out
+*.class
+*.dll
+*.so
+*.dylib
+*.exe
+*.pyc
+*.pyo
+*.jar
+
+# Logs and temp files
+logs/
+*.log
+*.temp
+*.tmp
+
+# Version control folders
+.svn/
+.hg/
+.cvs/
+
+# System-specific files
+.DS_Store
+.Trashes
+desktop.ini
+*.lnk
+
+# Archives
+*.zip
+*.tar
+*.gz
+*.rar
+*.7z
+
+# Other build files
+build/
+dist/
+*.lock
+*.env
+*.coverage
+coverage/
+*.code-workspace
+
+# Custom rules (add your own below this line)
+
