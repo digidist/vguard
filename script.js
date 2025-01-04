@@ -2,6 +2,12 @@ const translations = {
   hr: {
     "contact-description":
       "Za upite, zahtjeve za ponude ili mogućnosti suradnje, obratite nam se koristeći dolje navedene kontakt podatke.",
+    "contact-title": "Kontaktirajte nas",
+    "contact-company-heading": "🏢 Tvrtka",
+    "contact-address-heading": "📍 Adresa",
+    "contact-oib-heading": "🔢 OIB",
+    "contact-phone-heading": "📞 Telefon",
+    "contact-email-heading": "📧 Email",
     "company-name": "VANGUARD SYSTEMS",
     "company-tagline": "Vaša vizija, naša misija.",
     "hero-title": "Profesionalne elektro-instalacijske usluge",
@@ -18,18 +24,18 @@ const translations = {
     "subcontracting-title": "Podugovaranje usluga",
     "subcontracting-description":
       "Nudimo profesionalne podugovaračke usluge za električne instalacije u Njemačkoj. Naš tim uključuje visoko kvalificirane električare s velikim iskustvom u njemačkim standardima i propisima, osiguravajući nesmetanu integraciju i izvrsne rezultate.",
-    "contact-title": "Kontaktirajte nas",
-    "contact-name": "Danijel Vukoja",
-    "contact-role": "Direktor",
-    "contact-phone": "Telefon: +385 97 663 0260",
-    "contact-email": "Email: vukojadanijel@gmail.com",
-    "contact-address": "Adresa: Kmanski prilaz IV 5, HR-21000 Split, Hrvatska",
     "about-description":
       "Vanguard Systems je vodeća tvrtka za elektro-instalacije posvećena pružanju visokokvalitetnih usluga našim klijentima.",
   },
   en: {
     "contact-description":
       "For inquiries, requests for quotes, or collaboration opportunities, reach out to us using the contact details below.",
+    "contact-title": "Contact Us",
+    "contact-company-heading": "🏢 Company",
+    "contact-address-heading": "📍 Address",
+    "contact-oib-heading": "🔢 OIB",
+    "contact-phone-heading": "📞 Phone",
+    "contact-email-heading": "📧 Email",
     "company-name": "VANGUARD SYSTEMS",
     "company-tagline": "Your vision, our mission.",
     "hero-title": "Professional Electro-Installation Services",
@@ -46,18 +52,18 @@ const translations = {
     "subcontracting-title": "Subcontracting Services",
     "subcontracting-description":
       "We offer professional subcontracting services for electrical installations in Germany. Our team includes highly skilled electricians with extensive experience in German standards and regulations, ensuring smooth integration and outstanding results.",
-    "contact-title": "Contact Us",
-    "contact-name": "Danijel Vukoja",
-    "contact-role": "Managing Director",
-    "contact-phone": "Phone: +385 97 663 0260",
-    "contact-email": "Email: vukojadanijel@gmail.com",
-    "contact-address": "Address: Kmanski prilaz IV 5, HR-21000 Split, Croatia",
     "about-description":
       "Vanguard Systems is a leading electro-installation company committed to delivering high-quality services to our clients.",
   },
   de: {
     "contact-description":
       "Für Anfragen, Angebotsanforderungen oder Kooperationsmöglichkeiten kontaktieren Sie uns bitte über die unten angegebenen Kontaktdaten.",
+    "contact-title": "Kontaktieren Sie uns",
+    "contact-company-heading": "🏢 Firma",
+    "contact-address-heading": "📍 Adresse",
+    "contact-oib-heading": "🔢 OIB",
+    "contact-phone-heading": "📞 Telefon",
+    "contact-email-heading": "📧 Email",
     "company-name": "VANGUARD SYSTEMS",
     "company-tagline": "Ihre Vision, unsere Mission.",
     "hero-title": "Professionelle Elektroinstallationsdienste",
@@ -74,12 +80,6 @@ const translations = {
     "subcontracting-title": "Subunternehmerleistungen",
     "subcontracting-description":
       "Wir bieten professionelle Subunternehmerleistungen für Elektroinstallationen in Deutschland an. Unser Team umfasst hochqualifizierte Elektriker mit umfangreicher Erfahrung in deutschen Standards und Vorschriften, die eine reibungslose Integration und herausragende Ergebnisse gewährleisten.",
-    "contact-title": "Kontaktieren Sie uns",
-    "contact-name": "Danijel Vukoja",
-    "contact-role": "Geschäftsführer",
-    "contact-phone": "Telefon: +385 97 663 0260",
-    "contact-email": "Email: vukojadanijel@gmail.com",
-    "contact-address": "Adresse: Kmanski prilaz IV 5, HR-21000 Split, Kroatien",
     "about-description":
       "Vanguard Systeme ist ein führendes Unternehmen für Elektroinstallationen, das sich der Bereitstellung hochwertiger Dienstleistungen für unsere Kunden verpflichtet hat.",
   },
