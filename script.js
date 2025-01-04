@@ -59,7 +59,7 @@ const translations = {
     "contact-description":
       "Für Anfragen, Angebotsanforderungen oder Kooperationsmöglichkeiten kontaktieren Sie uns bitte über die unten angegebenen Kontaktdaten.",
     "contact-title": "Kontaktieren Sie uns",
-    "contact-company-heading": "🏢 Firma",
+    "contact-company-heading": "🏢 Unternehmen",
     "contact-address-heading": "📍 Adresse",
     "contact-oib-heading": "🔢 OIB",
     "contact-phone-heading": "📞 Telefon",
