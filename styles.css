@@ -205,6 +205,13 @@ footer a:hover {
     color: whitesmoke;
 }
 
+.modal-content span {
+    font-size: 1.1em;
+    margin: 20px 0;
+    color: whitesmoke;
+}
+
+
 .modal-content a {
     color: tomato;
     text-decoration: none;
