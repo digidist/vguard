@@ -26,10 +26,19 @@ const translations = {
       "Nudimo profesionalne podugovaračke usluge za električne instalacije u Njemačkoj. Naš tim uključuje visoko kvalificirane električare s velikim iskustvom u njemačkim standardima i propisima, osiguravajući nesmetanu integraciju i izvrsne rezultate.",
     "about-description":
       "Vanguard Systems je vodeća tvrtka za elektro-instalacije posvećena pružanju visokokvalitetnih usluga našim klijentima.",
+    "close-button": "x",
+    "modal-title": "Detalji o web stranici",
+    "modal-description":
+      "Dizajnirao i implementirao Digital Distributed d.o.o.",
+    "modal-contact":
+      "Tražite profesionalnu i personaliziranu web stranicu? Kontaktirajte nas na",
+    "modal-email": "digitaldistributed@outlook.com",
+    "modal-footer":
+      "Tu smo da vam pomognemo oživjeti vaše ideje s modernim i korisnički prilagođenim dizajnima. Stvorimo nešto nevjerojatno zajedno!",
   },
   en: {
     "contact-description":
-      "For inquiries, requests for quotes, or collaboration opportunities, reach out to us using the contact details below.",
+      "For inquiries, requests for quotes, or collaboration opportunities, reach out to us for a quote using the contact details below.",
     "contact-title": "Contact Us",
     "contact-company-heading": "🏢 Company",
     "contact-address-heading": "📍 Address",
@@ -54,6 +63,15 @@ const translations = {
       "We offer professional subcontracting services for electrical installations in Germany. Our team includes highly skilled electricians with extensive experience in German standards and regulations, ensuring smooth integration and outstanding results.",
     "about-description":
       "Vanguard Systems is a leading electro-installation company committed to delivering high-quality services to our clients.",
+    "close-button": "x",
+    "modal-title": "Website Details",
+    "modal-description":
+      "Designed and implemented by Digital Distributed d.o.o.",
+    "modal-contact":
+      "Looking for a professional and personalized website? Reach out to us at",
+    "modal-email": "digitaldistributed@outlook.com",
+    "modal-footer":
+      "We’re here to help you bring your ideas to life with modern, user-friendly designs. Let’s create something amazing together!",
   },
   de: {
     "contact-description":
@@ -82,6 +100,15 @@ const translations = {
       "Wir bieten professionelle Subunternehmerleistungen für Elektroinstallationen in Deutschland an. Unser Team umfasst hochqualifizierte Elektriker mit umfangreicher Erfahrung in deutschen Standards und Vorschriften, die eine reibungslose Integration und herausragende Ergebnisse gewährleisten.",
     "about-description":
       "Vanguard Systeme ist ein führendes Unternehmen für Elektroinstallationen, das sich der Bereitstellung hochwertiger Dienstleistungen für unsere Kunden verpflichtet hat.",
+    "close-button": "x",
+    "modal-title": "Webseitendetails",
+    "modal-description":
+      "Entworfen und umgesetzt von Digital Distributed d.o.o.",
+    "modal-contact":
+      "Suchen Sie nach einer professionellen und personalisierten Website? Kontaktieren Sie uns unter",
+    "modal-email": "digitaldistributed@outlook.com",
+    "modal-footer":
+      "Wir helfen Ihnen, Ihre Ideen mit modernen, benutzerfreundlichen Designs zum Leben zu erwecken. Lassen Sie uns etwas Großartiges schaffen!",
   },
 };
 
@@ -127,4 +154,45 @@ document.addEventListener("DOMContentLoaded", () => {
 
 languageDropdown.addEventListener("change", (e) => {
   setLanguage(e.target.value);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("design-modal");
+  const modalLink = document.getElementById("design-info-link");
+  const closeButton = document.querySelector(".close-button");
+
+  // Ensure modal is hidden on page load
+  modal.style.display = "none";
+
+  // Function to show the modal with animation
+  const showModal = () => {
+    modal.style.display = "flex"; // Flex for proper centering
+    setTimeout(() => {
+      modal.classList.add("modal-visible");
+    }, 10); // Delay for smooth animation
+  };
+
+  // Function to hide the modal with animation
+  const hideModal = () => {
+    modal.classList.remove("modal-visible");
+    setTimeout(() => {
+      modal.style.display = "none";
+    }, 300); // Match the animation duration in CSS
+  };
+
+  // Show modal when link is clicked
+  modalLink.addEventListener("click", (event) => {
+    event.preventDefault();
+    showModal();
+  });
+
+  // Close modal when the close button is clicked
+  closeButton.addEventListener("click", hideModal);
+
+  // Close modal when clicking outside the modal content
+  window.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      hideModal();
+    }
+  });
 });
