@@ -206,8 +206,37 @@ document.addEventListener("DOMContentLoaded", () => {
           }, 2000);
         })
         .catch((err) => {
-          console.error("Failed to copy email: ", err);
-          copyFeedbackElement.textContent = "Failed";
+          console.error(
+            "Failed to copy email using navigator.clipboard: ",
+            err
+          );
+          copyFeedbackElement.textContent = "Failed, trying fallback...";
+          // Fallback for older browsers or if Clipboard API fails
+          try {
+            const textArea = document.createElement("textarea");
+            textArea.value = email;
+            // Styling to ensure it's part of the DOM but not visible and can be focused
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px"; // Off-screen
+            textArea.style.left = "-9999px"; // Off-screen
+            textArea.style.opacity = "0"; // Visually hidden
+            // No readonly attribute needed here, as we want to select its content
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select(); // Select the text
+            const successful = document.execCommand("copy"); // Attempt to copy
+            document.body.removeChild(textArea); // Clean up
+
+            if (successful) {
+              copyFeedbackElement.textContent = "Copied (fallback)!";
+            } else {
+              copyFeedbackElement.textContent = "Copy not supported";
+              console.error("Fallback document.execCommand failed");
+            }
+          } catch (fallbackErr) {
+            console.error("Fallback copy mechanism failed: ", fallbackErr);
+            copyFeedbackElement.textContent = "Copy not supported";
+          }
           setTimeout(() => {
             copyFeedbackElement.textContent = "";
           }, 2000);
