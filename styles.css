@@ -60,6 +60,7 @@ section::before {
 
 #about {
     background: linear-gradient(251deg, rgb(36, 45, 57), rgb(0, 0, 0));
+    /* flex-grow: 0;  -- This will be handled by the media query */
 }
 
 #contact {
@@ -135,12 +136,14 @@ h1, h2 {
 }
 
 footer {
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    background-color: #000000; /* Solid black background */
     color: whitesmoke;
     text-align: center;
     font-size: 0.9em;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-top: 20px;    /* Added for vertical spacing */
+    padding-bottom: 20px; /* Added for vertical spacing */
+    padding-left: 0;      /* Remove horizontal padding */
+    padding-right: 0;     /* Remove horizontal padding */
     z-index: 100; /* Ensure it appears above other content */
 }
 
@@ -329,6 +332,79 @@ footer a:hover {
 .slide-in-visible {
     opacity: 1;
     transform: translateX(0); /* Return to the original position */
+}
+
+@media (min-width: 1200px) {
+  body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #home, #contact {
+    padding-top: 15vh; /* Use viewport height percentage for padding */
+    padding-bottom: 15vh;
+    min-height: 30vh; /* Minimum height for these sections */
+    flex-grow: 1; /* Allow sections to grow and fill available space */
+  }
+
+  #about {
+    flex-grow: 0; /* Prevent the middle section from growing excessively */
+    /* Properties for #about itself remain here if needed, e.g., padding, background is already global */
+  }
+
+  #about .content {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box; /* Ensure padding/border are included in the 70% width */
+  }
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .logo-container {
+        flex-direction: column;
+    }
+
+    .logo-container .company-info {
+        order: 1; /* Ensure company info comes first */
+    }
+
+    .logo-container .logo-img {
+        order: 2; /* Ensure logo image comes after company info */
+    }
+
+    .company-name {
+        font-size: 20px; /* Adjust as needed */
+    }
+
+    .company-tagline {
+        font-size: 16px; /* Adjust as needed */
+    }
+
+    h1 {
+        font-size: 24px; /* Adjust hero title for mobile */
+    }
+
+    p {
+        font-size: 14px; /* Adjust paragraph text for mobile */
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr; /* Stack services on mobile */
+    }
+
+    section {
+        padding: 60px 15px; /* Adjust padding for mobile */
+    }
 }
 
 

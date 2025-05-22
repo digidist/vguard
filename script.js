@@ -1,198 +1,240 @@
-const translations = {
-  hr: {
-    "contact-description":
-      "Za upite, zahtjeve za ponude ili mogućnosti suradnje, obratite nam se koristeći dolje navedene kontakt podatke.",
-    "contact-title": "Kontaktirajte nas",
-    "contact-company-heading": "🏢 Tvrtka",
-    "contact-address-heading": "📍 Adresa",
-    "contact-oib-heading": "🔢 OIB",
-    "contact-phone-heading": "📞 Telefon",
-    "contact-email-heading": "📧 Email",
-    "company-name": "VANGUARD SYSTEMS",
-    "company-tagline": "Vaša vizija, naša misija.",
-    "hero-title": "Profesionalne elektro-instalacijske usluge",
-    "hero-description": "Donosimo izvrsnost u električnim rješenjima",
-    "cta-button": "Zatražite ponudu",
-    "about-title": "O Vanguard Systems-u",
-    "services-title": "Naše usluge",
-    "service-commercial-title": "Komercijalni projekti",
-    "service-commercial-description":
-      "Profesionalna električna rješenja za tvrtke svih veličina. Od planiranja do instalacije, naš stručni tim osigurava sigurnost, pouzdanost i dugoročno zadovoljstvo u vašim poslovnim prostorima.",
-    "service-industrial-title": "Industrijska rješenja",
-    "service-industrial-description":
-      "Napredne električne usluge za industrijske objekte i operacije. Nudimo prilagođena rješenja za složene industrijske potrebe, osiguravajući maksimalnu učinkovitost i usklađenost sa standardima.",
-    "subcontracting-title": "Podugovaranje usluga",
-    "subcontracting-description":
-      "Nudimo profesionalne podugovaračke usluge za električne instalacije u Njemačkoj. Naš tim uključuje visoko kvalificirane električare s velikim iskustvom u njemačkim standardima i propisima, osiguravajući nesmetanu integraciju i izvrsne rezultate.",
-    "about-description":
-      "Vanguard Systems je vodeća tvrtka za elektro-instalacije posvećena pružanju visokokvalitetnih usluga našim klijentima.",
-    "close-button": "x",
-    "modal-title": "Detalji o web stranici",
-    "modal-description":
-      "Dizajnirao i implementirao Digital Distributed d.o.o.",
-    "modal-contact":
-      "Tražite profesionalnu i personaliziranu web stranicu? Kontaktirajte nas na",
-    "modal-email": "digitaldistributed@outlook.com",
-    "modal-footer":
-      "Tu smo da vam pomognemo oživjeti vaše ideje s modernim i korisnički prilagođenim dizajnima. Stvorimo nešto nevjerojatno zajedno!",
-  },
-  en: {
-    "contact-description":
-      "For inquiries, requests for quotes, or collaboration opportunities, reach out to us for a quote using the contact details below.",
-    "contact-title": "Contact Us",
-    "contact-company-heading": "🏢 Company",
-    "contact-address-heading": "📍 Address",
-    "contact-oib-heading": "🔢 OIB",
-    "contact-phone-heading": "📞 Phone",
-    "contact-email-heading": "📧 Email",
-    "company-name": "VANGUARD SYSTEMS",
-    "company-tagline": "Your vision, our mission.",
-    "hero-title": "Professional Electro-Installation Services",
-    "hero-description": "Delivering Excellence in Electrical Solutions",
-    "cta-button": "Get a Quote",
-    "about-title": "About Vanguard Systems",
-    "services-title": "Our Services",
-    "service-commercial-title": "Commercial Projects",
-    "service-commercial-description":
-      "Professional electrical solutions for businesses of all sizes. From planning to installation, our expert team ensures safety, reliability, and long-term satisfaction in your commercial spaces.",
-    "service-industrial-title": "Industrial Solutions",
-    "service-industrial-description":
-      "Advanced electrical services for industrial facilities and operations. We provide tailored solutions for complex industrial needs, ensuring maximum efficiency and compliance with standards.",
-    "subcontracting-title": "Subcontracting Services",
-    "subcontracting-description":
-      "We offer professional subcontracting services for electrical installations in Germany. Our team includes highly skilled electricians with extensive experience in German standards and regulations, ensuring smooth integration and outstanding results.",
-    "about-description":
-      "Vanguard Systems is a leading electro-installation company committed to delivering high-quality services to our clients.",
-    "close-button": "x",
-    "modal-title": "Website Details",
-    "modal-description":
-      "Designed and implemented by Digital Distributed d.o.o.",
-    "modal-contact":
-      "Looking for a professional and personalized website? Reach out to us at",
-    "modal-email": "digitaldistributed@outlook.com",
-    "modal-footer":
-      "We’re here to help you bring your ideas to life with modern, user-friendly designs. Let’s create something amazing together!",
-  },
-  de: {
-    "contact-description":
-      "Für Anfragen, Angebotsanforderungen oder Kooperationsmöglichkeiten kontaktieren Sie uns bitte über die unten angegebenen Kontaktdaten.",
-    "contact-title": "Kontaktieren Sie uns",
-    "contact-company-heading": "🏢 Unternehmen",
-    "contact-address-heading": "📍 Adresse",
-    "contact-oib-heading": "🔢 OIB",
-    "contact-phone-heading": "📞 Telefon",
-    "contact-email-heading": "📧 Email",
-    "company-name": "VANGUARD SYSTEMS",
-    "company-tagline": "Ihre Vision, unsere Mission.",
-    "hero-title": "Professionelle Elektroinstallationsdienste",
-    "hero-description": "Exzellenz in elektrischen Lösungen liefern",
-    "cta-button": "Ein Angebot erhalten",
-    "about-title": "Über Vanguard Systems",
-    "services-title": "Unsere Dienstleistungen",
-    "service-commercial-title": "Gewerbliche Projekte",
-    "service-commercial-description":
-      "Professionelle elektrische Lösungen für Unternehmen jeder Größe. Von der Planung bis zur Installation sorgt unser Expertenteam für Sicherheit, Zuverlässigkeit und langfristige Zufriedenheit in Ihren Geschäftsräumen.",
-    "service-industrial-title": "Industrielle Lösungen",
-    "service-industrial-description":
-      "Fortschrittliche elektrische Dienstleistungen für Industrieanlagen und -betriebe. Wir bieten maßgeschneiderte Lösungen für komplexe industrielle Anforderungen und gewährleisten maximale Effizienz und Einhaltung von Standards.",
-    "subcontracting-title": "Subunternehmerleistungen",
-    "subcontracting-description":
-      "Wir bieten professionelle Subunternehmerleistungen für Elektroinstallationen in Deutschland an. Unser Team umfasst hochqualifizierte Elektriker mit umfangreicher Erfahrung in deutschen Standards und Vorschriften, die eine reibungslose Integration und herausragende Ergebnisse gewährleisten.",
-    "about-description":
-      "Vanguard Systeme ist ein führendes Unternehmen für Elektroinstallationen, das sich der Bereitstellung hochwertiger Dienstleistungen für unsere Kunden verpflichtet hat.",
-    "close-button": "x",
-    "modal-title": "Webseitendetails",
-    "modal-description":
-      "Entworfen und umgesetzt von Digital Distributed d.o.o.",
-    "modal-contact":
-      "Suchen Sie nach einer professionellen und personalisierten Website? Kontaktieren Sie uns unter",
-    "modal-email": "digitaldistributed@outlook.com",
-    "modal-footer":
-      "Wir helfen Ihnen, Ihre Ideen mit modernen, benutzerfreundlichen Designs zum Leben zu erwecken. Lassen Sie uns etwas Großartiges schaffen!",
-  },
-};
-
-const languageDropdown = document.getElementById("language-dropdown");
-
-function setLanguage(language) {
-  const elements = document.querySelectorAll("[data-lang-key]");
-  elements.forEach((element) => {
-    const key = element.getAttribute("data-lang-key");
-    if (translations[language] && translations[language][key]) {
-      element.textContent = translations[language][key];
-    }
-  });
-}
-
-const userLang = navigator.language.slice(0, 2);
-setLanguage(translations[userLang] ? userLang : "en");
-
 document.addEventListener("DOMContentLoaded", () => {
-  const observerOptions = {
-    threshold: 0.2, // Trigger animation when 20% of the element is visible
+  // Language Switcher Logic
+  const languageDropdown = document.getElementById("language-dropdown");
+  const translatableElements = document.querySelectorAll("[data-lang-key]");
+
+  // Translations (ensure this is complete and correct)
+  const translations = {
+    en: {
+      "company-name": "VANGUARD SYSTEMS",
+      "company-tagline": "Your vision, our mission.",
+      "hero-title": "Professional Electro-Installation Services",
+      "hero-description": "Delivering Excellence in Electrical Solutions",
+      "cta-button": "Get a Quote",
+      "about-title": "About Vanguard Systems",
+      "about-description":
+        "Vanguard Systems is a leading electro-installation company committed to delivering high-quality services to our clients.",
+      "services-title": "Our Services",
+      "service-commercial-title": "Commercial Projects",
+      "service-commercial-description":
+        "Professional electrical solutions for businesses of all sizes. From planning to installation, our expert team ensures safety, reliability, and long-term satisfaction in your commercial spaces.",
+      "service-industrial-title": "Industrial Solutions",
+      "service-industrial-description":
+        "Advanced electrical services for industrial facilities and operations. We provide tailored solutions for complex industrial needs, ensuring maximum efficiency and compliance with standards.",
+      "subcontracting-title": "Subcontracting Services",
+      "subcontracting-description":
+        "We offer professional subcontracting services for electrical installations in Germany. Our team includes highly skilled electricians with extensive experience in German standards and regulations, ensuring smooth integration and outstanding results.",
+      "contact-title": "Contact Us",
+      "contact-description":
+        "For inquiries, requests for quotes, or collaboration opportunities, reach out to us using the contact details below.",
+      "contact-company-heading": "🏢 Company",
+      "contact-address-heading": "📍 Address",
+      "contact-address":
+        "Kmanski prilaz IV 5<br />HR - 21000 Split<br />Kroatien",
+      "contact-oib-heading": "🔢 OIB",
+      "contact-oib": "63508534616",
+      "contact-phone-heading": "📞 Phone",
+      "contact-phone": "+385 97 663 0260",
+      "contact-email-heading": "📧 Email",
+      "contact-email": "vukoja-danijel@vanguard-systems.hr",
+      "close-button": "&times;",
+      "modal-title": "Website Details",
+      "modal-description":
+        "Designed and implemented by Digital Distributed d.o.o.",
+      "modal-contact":
+        "Looking for a professional and personalized website? Reach out to us at",
+      "modal-email": "digitaldistributed@outlook.com",
+      "modal-footer":
+        "We're here to help you bring your ideas to life with modern, user-friendly designs. Let's create something amazing together!",
+    },
+    de: {
+      // German translations
+      "company-name": "VANGUARD SYSTEMS",
+      "company-tagline": "Ihre Vision, unsere Mission.",
+      "hero-title": "Professionelle Elektroinstallationsdienstleistungen",
+      "hero-description": "Exzellenz in elektrischen Lösungen liefern",
+      "cta-button": "Angebot einholen",
+      "about-title": "Über Vanguard Systems",
+      "about-description":
+        "Vanguard Systems ist ein führendes Elektroinstallationsunternehmen, das sich dazu verpflichtet hat, seinen Kunden qualitativ hochwertige Dienstleistungen zu liefern.",
+      "services-title": "Unsere Dienstleistungen",
+      "service-commercial-title": "Gewerbliche Projekte",
+      "service-commercial-description":
+        "Professionelle elektrische Lösungen für Unternehmen jeder Größe. Von der Planung bis zur Installation gewährleistet unser Expertenteam Sicherheit, Zuverlässigkeit und langfristige Zufriedenheit in Ihren gewerblichen Räumen.",
+      "service-industrial-title": "Industrielle Lösungen",
+      "service-industrial-description":
+        "Fortschrittliche elektrische Dienstleistungen für Industrieanlagen und -betriebe. Wir bieten maßgeschneiderte Lösungen für komplexe industrielle Anforderungen und gewährleisten maximale Effizienz und Einhaltung von Standards.",
+      "subcontracting-title": "Subunternehmerdienste",
+      "subcontracting-description":
+        "Wir bieten professionelle Subunternehmerdienste für Elektroinstallationen in Deutschland an. Unser Team besteht aus hochqualifizierten Elektrikern mit umfangreicher Erfahrung in deutschen Standards und Vorschriften, die eine reibungslose Integration und hervorragende Ergebnisse gewährleisten.",
+      "contact-title": "Kontaktieren Sie uns",
+      "contact-description":
+        "Für Anfragen, Angebotsanfragen oder Kooperationsmöglichkeiten erreichen Sie uns über die unten stehenden Kontaktdaten.",
+      "contact-company-heading": "🏢 Firma",
+      "contact-address-heading": "📍 Adresse",
+      "contact-address":
+        "Kmanski prilaz IV 5<br />HR - 21000 Split<br />Kroatien",
+      "contact-oib-heading": "🔢 OIB",
+      "contact-oib": "63508534616",
+      "contact-phone-heading": "📞 Telefon",
+      "contact-phone": "+385 97 663 0260",
+      "contact-email-heading": "📧 E-Mail",
+      "contact-email": "vukoja-danijel@vanguard-systems.hr",
+      "close-button": "&times;",
+      "modal-title": "Website-Details",
+      "modal-description":
+        "Entworfen und umgesetzt von Digital Distributed d.o.o.",
+      "modal-contact":
+        "Suchen Sie eine professionelle und personalisierte Website? Kontaktieren Sie uns unter",
+      "modal-email": "digitaldistributed@outlook.com",
+      "modal-footer":
+        "Wir sind hier, um Ihnen zu helfen, Ihre Ideen mit modernen, benutzerfreundlichen Designs zum Leben zu erwecken. Lassen Sie uns gemeinsam etwas Erstaunliches schaffen!",
+    },
+    hr: {
+      // Croatian translations
+      "company-name": "VANGUARD SYSTEMS",
+      "company-tagline": "Vaša vizija, naša misija.",
+      "hero-title": "Profesionalne elektroinstalacijske usluge",
+      "hero-description": "Isporučivanje izvrsnosti u električnim rješenjima",
+      "cta-button": "Zatražite ponudu",
+      "about-title": "O Vanguard Systems",
+      "about-description":
+        "Vanguard Systems je vodeća tvrtka za elektroinstalacije posvećena pružanju visokokvalitetnih usluga svojim klijentima.",
+      "services-title": "Naše usluge",
+      "service-commercial-title": "Komercijalni projekti",
+      "service-commercial-description":
+        "Profesionalna električna rješenja za tvrtke svih veličina. Od planiranja do instalacije, naš stručni tim osigurava sigurnost, pouzdanost i dugoročno zadovoljstvo u vašim komercijalnim prostorima.",
+      "service-industrial-title": "Industrijska rješenja",
+      "service-industrial-description":
+        "Napredne električne usluge za industrijska postrojenja i operacije. Pružamo prilagođena rješenja za složene industrijske potrebe, osiguravajući maksimalnu učinkovitost i usklađenost sa standardima.",
+      "subcontracting-title": "Usluge podugovaranja",
+      "subcontracting-description":
+        "Nudimo profesionalne usluge podugovaranja za elektroinstalacije u Njemačkoj. Naš tim uključuje visokokvalificirane električare s velikim iskustvom u njemačkim standardima i propisima, osiguravajući glatku integraciju i izvanredne rezultate.",
+      "contact-title": "Kontaktirajte nas",
+      "contact-description":
+        "Za upite, zahtjeve za ponude ili mogućnosti suradnje, obratite nam se putem dolje navedenih kontaktnih podataka.",
+      "contact-company-heading": "🏢 Tvrtka",
+      "contact-address-heading": "📍 Adresa",
+      "contact-address":
+        "Kmanski prilaz IV 5<br />HR - 21000 Split<br />Hrvatska",
+      "contact-oib-heading": "🔢 OIB",
+      "contact-oib": "63508534616",
+      "contact-phone-heading": "📞 Telefon",
+      "contact-phone": "+385 97 663 0260",
+      "contact-email-heading": "📧 Email",
+      "contact-email": "vukoja-danijel@vanguard-systems.hr",
+      "close-button": "&times;",
+      "modal-title": "Detalji web stranice",
+      "modal-description":
+        "Dizajnirao i implementirao Digital Distributed d.o.o.",
+      "modal-contact":
+        "Tražite profesionalnu i personaliziranu web stranicu? Obratite nam se na",
+      "modal-email": "digitaldistributed@outlook.com",
+      "modal-footer":
+        "Tu smo da vam pomognemo oživjeti vaše ideje modernim, korisnički prilagođenim dizajnom. Stvorimo zajedno nešto nevjerojatno!",
+    },
   };
 
-  const fadeElements = document.querySelectorAll(".fade-in, .slide-in");
-
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("fade-in-visible", "slide-in-visible");
-        observer.unobserve(entry.target); // Stop observing once the animation has triggered
+  const setLanguage = (lang) => {
+    translatableElements.forEach((el) => {
+      const key = el.dataset.langKey;
+      if (translations[lang] && translations[lang][key]) {
+        el.innerHTML = translations[lang][key];
       }
     });
-  }, observerOptions);
+    localStorage.setItem("preferredLanguage", lang);
+    if (languageDropdown) languageDropdown.value = lang;
+  };
 
-  fadeElements.forEach((el) => observer.observe(el));
+  if (languageDropdown) {
+    languageDropdown.addEventListener("change", (event) => {
+      setLanguage(event.target.value);
+    });
+  }
 
-  // Detect the default language and update the dropdown value
-  const userLang = navigator.language.slice(0, 2);
-  const defaultLang = translations[userLang] ? userLang : "en";
+  const preferredLang = localStorage.getItem("preferredLanguage");
+  const browserLang = navigator.language.split("-")[0];
+  let defaultLang = "en";
+
+  if (preferredLang && translations[preferredLang]) {
+    defaultLang = preferredLang;
+  } else if (translations[browserLang]) {
+    defaultLang = browserLang;
+  }
+
   setLanguage(defaultLang);
-  languageDropdown.value = defaultLang; // Ensure the dropdown reflects the detected language
-});
+  if (languageDropdown) languageDropdown.value = defaultLang;
 
-languageDropdown.addEventListener("change", (e) => {
-  setLanguage(e.target.value);
-});
-
-document.addEventListener("DOMContentLoaded", () => {
+  // Modal Logic
   const modal = document.getElementById("design-modal");
-  const modalLink = document.getElementById("design-info-link");
-  const closeButton = document.querySelector(".close-button");
+  const link = document.getElementById("design-info-link");
+  const closeButton = modal ? modal.querySelector(".close-button") : null;
 
-  // Ensure modal is hidden on page load
-  modal.style.display = "none";
+  if (link && modal && closeButton) {
+    link.onclick = function (event) {
+      event.preventDefault();
+      modal.style.display = "flex";
+      setTimeout(() => modal.classList.add("modal-visible"), 10);
+    };
 
-  // Function to show the modal with animation
-  const showModal = () => {
-    modal.style.display = "flex"; // Flex for proper centering
-    setTimeout(() => {
-      modal.classList.add("modal-visible");
-    }, 10); // Delay for smooth animation
-  };
+    closeButton.onclick = function () {
+      modal.classList.remove("modal-visible");
+      setTimeout(() => (modal.style.display = "none"), 300);
+    };
 
-  // Function to hide the modal with animation
-  const hideModal = () => {
-    modal.classList.remove("modal-visible");
-    setTimeout(() => {
-      modal.style.display = "none";
-    }, 300); // Match the animation duration in CSS
-  };
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.classList.remove("modal-visible");
+        setTimeout(() => (modal.style.display = "none"), 300);
+      }
+    };
+  }
 
-  // Show modal when link is clicked
-  modalLink.addEventListener("click", (event) => {
-    event.preventDefault();
-    showModal();
-  });
+  const emailAddressElement = document.getElementById("email-address");
+  const copyEmailButton = document.getElementById("copy-email-button");
+  const copyFeedbackElement = document.getElementById("copy-feedback");
 
-  // Close modal when the close button is clicked
-  closeButton.addEventListener("click", hideModal);
+  if (copyEmailButton && emailAddressElement && copyFeedbackElement) {
+    copyEmailButton.addEventListener("click", () => {
+      const email = emailAddressElement.href.replace("mailto:", "");
+      navigator.clipboard
+        .writeText(email)
+        .then(() => {
+          copyFeedbackElement.textContent = "Copied!";
+          setTimeout(() => {
+            copyFeedbackElement.textContent = "";
+          }, 2000);
+        })
+        .catch((err) => {
+          console.error("Failed to copy email: ", err);
+          copyFeedbackElement.textContent = "Failed";
+          setTimeout(() => {
+            copyFeedbackElement.textContent = "";
+          }, 2000);
+        });
+    });
+  }
 
-  // Close modal when clicking outside the modal content
-  window.addEventListener("click", (event) => {
-    if (event.target === modal) {
-      hideModal();
-    }
+  // Intersection Observer for fade-in and slide-in animations (SINGLE INSTANCE)
+  const animatedElements = document.querySelectorAll(".fade-in, .slide-in");
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          if (entry.target.classList.contains("fade-in")) {
+            entry.target.classList.add("fade-in-visible");
+          }
+          if (entry.target.classList.contains("slide-in")) {
+            entry.target.classList.add("slide-in-visible");
+          }
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  animatedElements.forEach((element) => {
+    observer.observe(element);
   });
 });
