@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "contact-phone-heading": "📞 Phone",
       "contact-phone": "+385 97 663 0260",
       "contact-email-heading": "📧 Email",
-      "contact-email": "vukoja-danijel@vanguard-systems.hr",
+      "contact-email": "info@vanguard-systems.hr",
       "close-button": "&times;",
       "modal-title": "Website Details",
       "modal-description":
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "contact-phone-heading": "📞 Telefon",
       "contact-phone": "+385 97 663 0260",
       "contact-email-heading": "📧 E-Mail",
-      "contact-email": "vukoja-danijel@vanguard-systems.hr",
+      "contact-email": "info@vanguard-systems.hr",
       "close-button": "&times;",
       "modal-title": "Website-Details",
       "modal-description":
@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "contact-phone-heading": "📞 Telefon",
       "contact-phone": "+385 97 663 0260",
       "contact-email-heading": "📧 Email",
-      "contact-email": "vukoja-danijel@vanguard-systems.hr",
+      "contact-email": "info@vanguard-systems.hr",
       "close-button": "&times;",
       "modal-title": "Detalji web stranice",
       "modal-description":
